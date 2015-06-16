@@ -35,7 +35,7 @@ _IEFormElementSetValue($oText1, $Pwd)
 _IEFormSubmit($oForm)
 
 For $i = 1 To UBound($aArray) - 1 ; Loop through the array.
-	  _IENavigate($oIE, "http://member6/device.htm?id=" & $csv[$i][0] & "&tabid=7")
+	  _IENavigate($oIE, "http://prtg/device.htm?id=" & $csv[$i][0] & "&tabid=7")
 	  Local $oForm = _IEFormGetObjByName($oIE, "objectdataform")
 	  Local $oSelect = _IEFormElementGetObjByName($oForm, "priority_")
 	  _IEFormElementOptionSelect($oSelect, $csv[$i][1], 1, "byValue")
